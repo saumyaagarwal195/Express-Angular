@@ -1,0 +1,27 @@
+<div>
+    <H2>Registeration</H2>
+    <input type="email" id="email" placeholder="email" [(ngModel)]="email"><br>
+    <input type="text" placeholder="username" [(ngModel)]="username"><br>
+    <input type="password" placeholder="password" [(ngModel)]="password"><br>
+    <input type="text" placeholder="BB_id" [(ngModel)]="BBid"><br>
+    <button (click)="addusers()" >Register</button><br>
+
+</div>
+<div>
+    <H2>Signin</H2>
+    <input type="text" placeholder="username" [(ngModel)]="Susername"><br>
+    <input type="password" placeholder="password" [(ngModel)]="Spassword"><br>
+    <button (click)="signin() " >Login</button><br>
+    <!-- <span *ngIf="success; then condition1 else condition2"></span> -->
+    <!-- <ng-template #condition1><a href="/show" >show all Users</a><br></ng-template>
+    <ng-template #condition2>Login failed</ng-template> -->
+
+</div>
+
+
+<a href="/show" >show all Users</a><br>
+<p>{{show}}</p><br>
+<p>{{Sshow}}</p><br>
+
+
+
