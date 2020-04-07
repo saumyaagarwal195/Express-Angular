@@ -1,0 +1,19 @@
+<p>
+  show-users works!
+</p>
+<div >
+  <table align="center" border =2>
+    <tr style=background-color:#0ddfdf>
+      <th>Email Adderss</th>
+      <th>User name</th>
+      <th>BB_id</th>
+    </tr>
+    <tr *ngFor="let i of USERS" >
+        <th>{{i.email}}</th>
+        <th>{{i._id}}</th>
+        <th>{{i.BBid}}</th>
+      </tr>
+  </table>
+
+</div><br>
+<a href="/" >back</a>
