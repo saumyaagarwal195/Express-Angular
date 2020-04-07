@@ -1,0 +1,28 @@
+<p>
+  userdata works!
+</p>
+<!-- <button (click)="DisplayOneUser()" >Get Data</button><br> -->
+<!-- <div>
+    <input type="text" placeholder="username" [(ngModel)]="username"><br>
+    <button (click)="DisplayOneUser()" >GET</button><br>
+</div> -->
+<div>
+  <button (click)="buzzer()" >Buzzer</button><br>
+</div>
+
+<div >
+  <table align="center" border =2>
+    <tr style=background-color:#0ddfdf>
+      <th>User Name</th>
+      <th>LDR</th>
+      <th>IR</th>
+    </tr>
+    <tr *ngFor="let i of SENSORS" >
+        <th>{{i.username}}</th>
+        <th>{{i.sensor1}}</th>
+        <th>{{i.sensor2}}</th>
+      </tr>
+  </table>
+
+</div><br>
+<a href="/" >back</a>
