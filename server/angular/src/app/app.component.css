@@ -1,0 +1,21 @@
+h1{
+    padding: 20px;
+    background-color: #99cc00;
+    color: #333333; 
+    text-align: center;
+ }
+ .root{
+     display: flex;
+ }
+ .first{
+     flex: 1;
+     margin: 10px;
+     padding: 10px;
+     border: 2px solid #333333;
+ }
+ .second{
+     flex: 1;
+     margin: 10px;
+     padding: 10px;
+     border: 2px solid #333333;    
+ }
