@@ -1,0 +1,19 @@
+<div>
+  <H2>Add BBid</H2>
+  <input type="text" placeholder="BB_id" [(ngModel)]="BBid"><br>
+  <button (click)="addBBid()" >ADD</button><br>
+</div>
+<p>{{show}}</p><br>
+
+<div >
+  <table align="center" border =2>
+    <tr style=background-color:#0ddfdf>
+      <th>BB_id</th>
+    </tr>
+    <tr *ngFor="let i of BBID" >
+        <th>{{i.BBid}}</th>
+      </tr>
+  </table>
+
+</div><br>
+<a href="/" >back</a>
